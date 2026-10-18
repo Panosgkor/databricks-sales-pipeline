@@ -1,6 +1,6 @@
 # Sales Data Pipeline on Databricks
 
- a small ETL pipeline in Databricks with SQL on sample bakery sales data (3,333 sales, 48 shops), following the Bronze → Silver → Gold structure.
+ Α small ETL pipeline in Databricks with SQL on sample bakery sales data (3,333 sales, 48 shops), following the Bronze → Silver → Gold structure.
 
 ## Pipeline
 - **Bronze:** CSV files loaded into Delta tables, with load time and source file per row. Row counts checked against the source.
