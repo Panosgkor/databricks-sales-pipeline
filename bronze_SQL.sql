@@ -25,12 +25,4 @@ FROM read_files(
 
 -- COMMAND ----------
 
-FROM read_files(
-  '/Volumes/workspace/sales_customers/raw_files/sales_transactions',
-  format => 'csv',
-  header => true
-);
-
--- COMMAND ----------
-
 LIST '/Volumes/workspace/sales_customers/raw_files/';
