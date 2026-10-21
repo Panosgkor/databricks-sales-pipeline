@@ -20,15 +20,20 @@ LEFT JOIN workspace.sales_customers.bronze_sales_franchises f
 WHERE t.transactionID IS NOT NULL
   AND t.totalPrice IS NOT NULL
   AND t.quantity > 0;
- 
+
 -- COMMAND ----------
- 
+
 SELECT *
 FROM workspace.sales_customers.silver_sales_transactions
 LIMIT 5;
- 
+
 -- COMMAND ----------
- 
+
 SELECT COUNT(*) AS silver_rows
 FROM workspace.sales_customers.silver_sales_transactions;
- 
+
+-- COMMAND ----------
+
+SELECT
+  (SELECT COUNT(*) FROM workspace.sales_customers.bronze_sales_transactions) AS bronze_rows,
+  (SELECT COUNT(*) FROM workspace.sales_customers.silver_sales_transactions) AS silver_rows;
