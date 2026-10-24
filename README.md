@@ -29,9 +29,4 @@ CSV files in a Unity Catalog volume
 
 Every step uses `CREATE OR REPLACE TABLE`, so the pipeline can be re-run safely without duplicating data.
 
-## Next steps
-- Incremental loading with Auto Loader and `MERGE`
-- Data quality expectations and a scheduled Lakeflow Job
-- A deduplication step on `transactionID`
-
 **Tools:** Databricks Free Edition, Spark SQL, Delta Lake, Unity Catalog
